@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Łukasz Gutowski - front end developer - wkrótce</title>
+</head>
+<body>
+	<h1>Zagraj! Będzie super!</h1>
+	<button class="btn btn-success" onclick="newGame()">Start!</button>
+	<div>	
+		<button class="btn btn-default pick-button" onclick="playerPick('rock')">
+	    Kamień <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-default pick-button" onclick="playerPick('paper')">
+	    Papier <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+		</button>
+		<button class="btn btn-default pick-button" onclick="playerPick('scissors')">
+	    Nożyczki <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+		</button>
+	</div>
+	<div class="score">
+		<h3>Aktualna runda</h3> <br>
+  		Komputer wybrał <span id="computerPick"></span> <br>
+  		Ty wybrałeś <span id="playerPick"></span> <br>
+  		Wynik: <span id="gameResult"></span>
+	</div>
+	<div>
+		<table class="table table-bordered table-striped">
+		  <thead>
+		    <tr>
+		      <th colspan="2" class="text-center">Wynik</th>
+		    </tr>
+		    <tr>
+		      <th id="playerName">Gracz</th>
+		      <th>Komputer</th>
+		    </tr>
+		  </thead>
+		  <tbody><tr>
+		    <td id="playerScore">0</td>
+		    <td id="computerScore">0</td>
+		  </tr></tbody>
+		</table>
+	</div>
+	<div>
+		<p id="roundResult"></p>
+	</div>			
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
